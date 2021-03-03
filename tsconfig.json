@@ -1,5 +1,6 @@
 {
   "compileOnSave": false,
+  "files": ["node_modules/finput/src/constants.ts"],
   "compilerOptions": {
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
@@ -14,7 +15,13 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ngx-finput": [
+        "dist/ngx-finput/ngx-finput",
+        "dist/ngx-finput"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
