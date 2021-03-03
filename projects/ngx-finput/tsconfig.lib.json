@@ -2,6 +2,7 @@
   "extends": "../../tsconfig.json",
   "compilerOptions": {
     "outDir": "../../out-tsc/lib",
+    "declarationMap": true,
     "target": "es2015",
     "declaration": true,
     "inlineSources": true,
@@ -19,6 +20,5 @@
   "exclude": [
     "src/test.ts",
     "**/*.spec.ts"
-  ],
-  "files": ["node_modules/finput/src/constants.ts"]
+  ]
 }

@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
-import { NgxFinputModule, Range } from '../../dist/ngx-finput/public-api';
+import { NgxFinputModule } from 'ngx-finput';
 
 
 @NgModule({
@@ -13,7 +13,7 @@ import { NgxFinputModule, Range } from '../../dist/ngx-finput/public-api';
     NgxFinputModule.forRoot({
       scale: 8,
       fixed: false,
-      range: Range,
+      range: 'POSITIVE'
     })
   ],
   providers: [],

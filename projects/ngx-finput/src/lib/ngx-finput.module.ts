@@ -1,5 +1,5 @@
 import { ModuleWithProviders, NgModule } from '@angular/core';
-import { IOptions } from 'finput';
+import { IOptions } from './types';
 import { NgxFinputDirective } from './finput.directive';
 
 
@@ -8,7 +8,7 @@ import { NgxFinputDirective } from './finput.directive';
   exports: [NgxFinputDirective]
 })
 export class NgxFinputModule {
-  static forRoot(config: Partial<IOptions>): ModuleWithProviders {
+  static forRoot(config: Partial<IOptions>): ModuleWithProviders<NgxFinputModule> {
     return {
       ngModule: NgxFinputModule,
       providers: [{
